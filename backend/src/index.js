@@ -11,6 +11,8 @@ import express from "express"
 
 import {app,server} from "./lib/socket.js"
 
+const PORT = process.env.PORT
+
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
